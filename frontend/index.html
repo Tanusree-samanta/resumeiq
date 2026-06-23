@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ResumeIQ – AI Resume Analyzer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="app">
+  <div class="hero">
+    <div class="hero-badge">AI-Powered · NLP · Real-time Analysis</div>
+    <h1>Resume<span>IQ</span></h1>
+    <p class="hero-sub">Upload your resume, paste a job description — get your match score, skill gaps, and actionable advice instantly.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:1rem;">
+    <div class="panel">
+      <div class="section-label">📄 Resume (PDF)</div>
+      <div class="upload-zone" id="dropZone">
+        <input type="file" id="fileInput" accept=".pdf,.txt" />
+        <div class="upload-icon" id="uploadIcon">📋</div>
+        <div class="upload-text"><strong>Click to upload</strong> or drag & drop</div>
+        <div class="upload-text" style="font-size:12px;margin-top:4px;color:var(--text3)">PDF or TXT · max 5 MB</div>
+        <div id="fileBadge" style="display:none" class="file-badge">📄 <span id="fileName"></span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="section-label">💼 Job Description</div>
+      <textarea id="jobDesc" placeholder="Paste the full job description here…&#10;&#10;e.g. We are looking for a Senior ML Engineer with experience in PyTorch, MLOps, and distributed training..."></textarea>
+    </div>
+
+    <button class="btn-analyze" id="analyzeBtn" onclick="analyze()" disabled>
+      Analyze Match
+    </button>
+    <div id="errorBox" class="error-box" style="display:none"></div>
+  </div>
+
+  <div class="results" id="results" style="display:none"></div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
