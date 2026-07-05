@@ -94,7 +94,7 @@ docker-compose up --build
 ## Running Tests
 
 ```bash
-cd backend
+cd backend 
 pytest tests/ -v
 ```
 
