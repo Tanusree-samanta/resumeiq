@@ -12,6 +12,8 @@
 
 
 
+
+
 ## Features
 
 - **Match Score (0–100)** – overall resume-to-JD alignment
