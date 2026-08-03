@@ -81,6 +81,7 @@ cd backend
 uvicorn main:app --reload --port 8000
 ```
 
+
 ### 4. Open in browser
 
 Navigate to `http://localhost:8000` — the backend serves the frontend automatically.
