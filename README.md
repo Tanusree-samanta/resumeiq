@@ -1,6 +1,8 @@
 # ResumeIQ – AI Resume Analyzer & Job Matcher 
 
 > Upload your resume · paste a job description · get a match score, skill gap analysis, and actionable suggestions — powered by Claude AI.
+>
+> 
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green)
