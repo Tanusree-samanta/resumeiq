@@ -46,7 +46,7 @@ resumeiq/
 │       ├── routers/
 │       │   └── analyze.py        # POST /api/analyze
 │       ├── services/
-│       │   └── analyzer.py       # Claude API + NLP logic
+│       │   └── analyzer.py       # API + NLP logic
 │       ├── models/
 │       │   └── schemas.py        # Pydantic request/response models
 │       └── tests/
